@@ -1,6 +1,5 @@
 import { BrowserRouter as Router, Routes, Route, Link, Outlet, Navigate } from 'react-router-dom';
 import { LayoutDashboard, Users, UserSquare2, FileText, Camera, Video, LogOut, Briefcase, CheckSquare, DollarSign, LifeBuoy } from 'lucide-react';
-import Dashboard from './Dashboard';
 import Orders from './Orders';
 import Tasks from './Tasks';
 import Financials from './Financials';

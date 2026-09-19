@@ -91,7 +91,7 @@ const Orders: React.FC = () => {
     e.preventDefault();
     try {
       // Step 1: Create or Update Client
-      const clientPayload = { ...clientData };
+      const clientPayload: any = { ...clientData };
       if (isNewClient) {
         delete clientPayload.id; // ensure backend creates a new one if it doesn't match email
       }
