@@ -3,7 +3,8 @@ import axios from 'axios';
 
 // Configure Axios defaults for backend communication
 axios.defaults.withCredentials = true;
-axios.defaults.baseURL = 'http://localhost:8080';
+// Point to the deployed backend by default, but allow override via .env if running locally
+axios.defaults.baseURL = import.meta.env.VITE_API_BASE_URL || 'https://leadyfy-vzre.onrender.com';
 
 interface User {
   email: string;

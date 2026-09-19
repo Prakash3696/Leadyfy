@@ -7,8 +7,8 @@ const Dashboard: React.FC = () => {
   useEffect(() => {
     const fetchStats = async () => {
       try {
-        const clientsRes = await axios.get('http://localhost:8080/api/clients');
-        const ordersRes = await axios.get('http://localhost:8080/api/orders');
+        const clientsRes = await axios.get('/api/clients');
+        const ordersRes = await axios.get('/api/orders');
         setStats({ clients: clientsRes.data.length, orders: ordersRes.data.length });
       } catch (err) {
         console.error(err);
